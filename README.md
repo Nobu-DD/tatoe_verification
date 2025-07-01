@@ -79,7 +79,8 @@
       - Docker
       - React
 - 例えランキング機能。(`わかりやすい`、`面白い`、`意外性`などジャンル別でランキングにする)
-- リアクション機能(複数実装)
+   - 下記に記述している**リアクション機能**にて、各リアクションをそれぞれ集計し、ランキングに反映させる予定です。
+- リアクション機能(`わかりやすい`、`面白い`、`意外性`など。各リアクションを集計することで、ランキングに反映されます)
 - 検索機能(テーマ単体、ジャンル✕ジャンルでの組み合わせなど)
 - お題の回答ヒントAI出力機能(お題に対してヒントを出力)
 - Googleログイン認証
@@ -107,10 +108,17 @@
 | 項目      | 内容                                                   |
 | ------- | ---------------------------------------------------- |
 | バックエンド  | Ruby on Rails 7.0.0・Ruby 3.2.3                                 |
-| フロントエンド | HTML, CSS, TailwindCSS, Turbo                        |
+| フロントエンド | HTML, CSS, TailwindCSS, Daisy UI, Turbo(Hotwire)               |
 | データベース  | PostgreSQL                                           |
 | ストレージ   | AWS S3(本リリース後の拡張にて画像ファイル投稿)               |
 | 認証        | Devise |
 | デプロイ    | Render |
 | 開発環境    | Docker |
 | 外部API    | OpenAI API（gpt-4.1-nano）                 |
+
+## 画面遷移図
+[Tatoe 画面遷移図](https://www.figma.com/design/h52ZY57d0laEO1PN7lCgp2/Tatoe?node-id=0-1&t=EiHWBsNduQXxuWzz-1)
+![画面遷移図](https://i.gyazo.com/d61bf98c39573f4cb957a45cc4c9e920.png)
+
+## ER図
+![ER図](https://i.gyazo.com/49eaeb23ff23d26df6c50e999af0cb24.png)
